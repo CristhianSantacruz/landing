@@ -4,6 +4,17 @@
 * Author URI: https://untree.co/
 * License: https://creativecommons.org/licenses/by/3.0/
 */
+
+:root {
+  
+    --color-1: #131a2d;
+    --color-2: #212346;
+    --color-3: #652c9e;
+    --color-4: #a03cbe;
+    --color-5: #eee6f3;
+   
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 body {
   overflow-x: hidden;
@@ -22,16 +33,16 @@ a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  color: #2f2f2f;
+  color: #904545;
   text-decoration: underline; }
   a:hover {
-    color: #2f2f2f;
+    color: #883131;
     text-decoration: none; }
   a.more {
     font-weight: 600; }
 
 .custom-navbar {
-  background: #1d2e3d!important;
+  background: var(--color-3)!important;
   padding-top: 20px;
   padding-bottom: 20px; }
   .custom-navbar .navbar-brand {
@@ -64,7 +75,7 @@ a {
         bottom: 0;
         left: 8px;
         right: 8px;
-        background: #f9bf29;
+        background: var(--color-1);
         height: 5px;
         opacity: 1;
         visibility: visible;
@@ -96,7 +107,7 @@ a {
         margin-right: 20px; }
 
 .hero {
-  background: #0D1F2D;
+  background: var(--color-2);
   padding: calc(4rem - 30px) 0 0rem 0; }
   @media (min-width: 768px) {
     .hero {
@@ -118,32 +129,50 @@ a {
       .hero h1 {
         font-size: 54px; } }
   .hero p {
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--color-5);
     margin-botom: 30px; }
   .hero .hero-img-wrap {
-    position: relative; }
-    .hero .hero-img-wrap img {
-      position: relative;
-      top: 0px;
-      right: 0px;
-      z-index: 2;
-      max-width: 780px;
-      left: -20px; }
+    position: relative;
+    margin-bottom: 30px;
+    top: -10px;
+    left: 5px;
+    flex: 1;
+   }
+  .hero .hero-img-wrap img {
+    background-color: rgb(126, 170, 60);
+    position: relative;
+    z-index: 2;
+    max-width: 100%;
+    height: auto;
+    width: 100%; /* Ajusta el tamaño aquí */
+    border-radius: 50%; /* Hace que la imagen tenga bordes circulares */
+  }
       @media (min-width: 768px) {
+        
         .hero .hero-img-wrap img {
           right: 0px;
-          left: -100px; } }
+          left: -50px; } 
+        
+        }
       @media (min-width: 992px) {
         .hero .hero-img-wrap img {
           left: 0px;
           top: -80px;
           position: absolute;
-          right: -50px; } }
+          right: -25px; } }
       @media (min-width: 1200px) {
+        .hero .hero-img-wrap {
+          position: relative;
+          margin-bottom: 30px;
+          top: 80px;
+          flex: 1;
+         }
+
         .hero .hero-img-wrap img {
           left: 0px;
-          top: -80px;
-          right: -100px; } }
+          top: 20px;
+          right: -50px; 
+        } }
     .hero .hero-img-wrap:after {
       content: "";
       position: absolute;
@@ -180,18 +209,18 @@ a {
       background: #314d43;
       border-color: #314d43; }
   .btn.btn-secondary {
-    color: #2f2f2f;
-    background: #f9bf29;
-    border-color: #f9bf29; }
+    color: #ffffff;
+    background: var(--color-4);
+    border-color: var(--color-5); }
     .btn.btn-secondary:hover {
-      background: #f8b810;
-      border-color: #f8b810; }
+      background:var(--color-3);
+      border-color:var(--color-3) }
   .btn.btn-white-outline {
     background: transparent;
     border-width: 2px;
-    border-color: rgba(255, 255, 255, 0.3); }
+    border-color: var(--color-3); }
     .btn.btn-white-outline:hover {
-      border-color: white;
+      border-color: var(--color-4);
       color: #ffffff; }
 
 .section-title {
@@ -220,8 +249,21 @@ a {
       font-weight: 800 !important;
       font-size: 18px !important; }
     .product-section .product-item h3, .product-section .product-item strong {
-      color: #2f2f2f;
+      color: var(--color-1);
       text-decoration: none; }
+    .product-section .product-item h2{
+      font-weight: bold;
+      font-size: large;
+      color: var(--color-3);
+    }
+    .product-section .product-item ul {
+      list-style-type: none; /* Quita los puntos de la lista */
+      padding: 0; /* Elimina el espacio de relleno */
+  }
+  .product-section .product-item ul li {
+      color: var(--color-2);
+      margin-bottom: 5px; /* Añade un espacio entre cada elemento de la lista */
+  }
     .product-section .product-item .icon-cross {
       position: absolute;
       width: 35px;
@@ -709,3 +751,6 @@ textarea {
     height: 50px;
     border-radius: 50%;
     background: rgba(59, 93, 80, 0.2); }
+.product-price{
+   color: var(--color-3);
+}
