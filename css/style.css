@@ -26,7 +26,7 @@ body {
   line-height: 28px;
   color: #6a6a6a;
   font-size: 14px;
-  background-color: #eff2f1; }
+  background-color: var(--color-5); }
 
 a {
   text-decoration: none;
@@ -295,7 +295,7 @@ a {
       right: 0;
       position: absolute;
       content: "";
-      background: #dce5e4;
+      background: rgb(226, 184, 213);
       height: 0%;
       z-index: -1;
       border-radius: 10px;
@@ -309,6 +309,7 @@ a {
       opacity: 1;
       visibility: visible; }
     .product-section .product-item:hover:before {
+      
       height: 70%; }
 
 .why-choose-section {
@@ -578,12 +579,13 @@ a {
 
 .footer-section {
   padding: 80px 0;
-  background: #ffffff; }
+  color: white;
+  background:var(--color-1); }
   .footer-section .relative {
     position: relative; }
   .footer-section a {
     text-decoration: none;
-    color: #2f2f2f;
+    color: white;
     -webkit-transition: .3s all ease;
     -o-transition: .3s all ease;
     transition: .3s all ease; }
@@ -601,7 +603,7 @@ a {
     .footer-section .subscription-form h3 {
       font-size: 18px;
       font-weight: 500;
-      color: #3b5d50; }
+      color: white; }
     .footer-section .subscription-form .form-control {
       height: 50px;
       border-radius: 10px;
@@ -610,7 +612,7 @@ a {
         outline: none;
         -webkit-box-shadow: none;
         box-shadow: none;
-        border-color: #3b5d50;
+        border-color: var(--color-4);
         -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
         box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2); }
       .footer-section .subscription-form .form-control::-webkit-input-placeholder {
@@ -624,12 +626,14 @@ a {
     .footer-section .subscription-form .btn {
       border-radius: 10px !important; }
   .footer-section .sofa-img {
+    
     position: absolute;
     top: -200px;
     z-index: 1;
     right: 0; }
     .footer-section .sofa-img img {
-      max-width: 380px; }
+      border-radius: 50%;
+      max-width: 280px; }
   .footer-section .links-wrap {
     margin-top: 0px; }
     @media (min-width: 992px) {
@@ -641,7 +645,7 @@ a {
     font-size: 32px;
     font-weight: 500;
     text-decoration: none;
-    color: #3b5d50; }
+    color: var(--color-4); }
   .footer-section .custom-social li {
     margin: 2px;
     display: inline-block; }
@@ -652,10 +656,10 @@ a {
       line-height: 40px;
       display: inline-block;
       background: #dce5e4;
-      color: #3b5d50;
+      color: var(--color-4);
       border-radius: 50%; }
       .footer-section .custom-social li a:hover {
-        background: #3b5d50;
+        background: var(--color-3);
         color: #ffffff; }
   .footer-section .border-top {
     border-color: #dce5e4; }

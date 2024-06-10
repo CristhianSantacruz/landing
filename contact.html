@@ -30,7 +30,12 @@
 		<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
 
 			<div class="container">
-				<a class="navbar-brand" href="index.html">Furni<span>.</span></a>
+				<div class="d-flex align-items-center">
+			        <figure class="m-0 me-2">
+						<img src="./images/my-images/me.jpg" alt="logo" class="rounded-circle" style="width: 50px; height: 50px;">
+					</figure>
+					<a class="navbar-brand" href="index.html">Klashz<span>.</span></a>
+				</div>
 
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -41,10 +46,10 @@
 						<li class="nav-item active">
 							<a class="nav-link" href="index.html">Inicio</a>
 						</li>
-						<li><a class="nav-link" href="shop.html">Videos</a></li>
-						<li><a class="nav-link" href="about.html">Cursos</a></li>
 						<li><a class="nav-link" href="services.html">Servicios</a></li>
-						<li><a class="nav-link" href="blog.html">Blog</a></li>
+						<li><a class="nav-link" href="shop.html">Proyectos</a></li>
+						<li><a class="nav-link" href="blog.html">Youtube</a></li>
+						<li><a class="nav-link" href="about.html">SobreMi</a></li>
 						<li><a class="nav-link" href="contact.html">Contacto</a></li>
 					</ul>
 
@@ -132,28 +137,33 @@
                 </div>
               </div>
 
-              <form id="contactform">
+              <form id="miformulario">
                 <div class="row">
                   <div class="col-6">
                     <div class="form-group">
-                      <label class="text-black" for="fname">First name</label>
-                      <input type="text" class="form-control" id="fname">
+                      <label class="text-black" for="fname">Nombre</label>
+                      <input type="text"  class="form-control" id="fname">
                     </div>
                   </div>
                   <div class="col-6">
                     <div class="form-group">
-                      <label class="text-black" for="lname">Last name</label>
+                      <label class="text-black" for="lname">Apellido</label>
                       <input type="text" class="form-control" id="lname">
                     </div>
                   </div>
                 </div>
+				<div class="form-group">
+					<label class="text-black" for="phone">Telefono</label>
+					<input type="tel" class="form-control" id="phone">
+				  </div>
+  
                 <div class="form-group">
-                  <label class="text-black" for="email">Email address</label>
+                  <label class="text-black" for="email">Correo</label>
                   <input type="email" class="form-control" id="email">
                 </div>
 
                 <div class="form-group mb-5">
-                  <label class="text-black" for="message">Message</label>
+                  <label class="text-black" for="message">¿Como puedo ayudarte?</label>
                   <textarea name="" class="form-control" id="message" cols="30" rows="5"></textarea>
                 </div>
 
@@ -171,7 +181,6 @@
 
     </div>
   </div>
-
   <!-- End Contact Form -->
 
 		
@@ -286,6 +295,7 @@
 		<script src="js/tiny-slider.js"></script>
 		<script src="js/custom.js"></script>
 		<script src="js/main.js"></script>
+		<script src="js/savemessage.js"></script>
 	</body>
 
 </html>

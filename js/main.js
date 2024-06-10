@@ -1,4 +1,4 @@
-let loaded = (eventLoaded) => {
+/*let loaded = (eventLoaded) => {
     window.alert("Bienvenido a landing page loaded")
     let myform = document.getElementById("contactform")
     myform.addEventListener('submit', (eventSubmit ) => { 
@@ -9,4 +9,4 @@ let loaded = (eventLoaded) => {
     debugger
 }
 
-window.addEventListener("DOMContentLoaded",loaded)
+window.addEventListener("DOMContentLoaded",loaded)*/
