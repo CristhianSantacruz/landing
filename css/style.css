@@ -758,3 +758,49 @@ textarea {
 .product-price{
    color: var(--color-3);
 }
+
+
+.hero .intro-excerpt ul li {
+  color: var(--color-5); /* Set text color to white */
+}
+
+#resultados {
+  margin-bottom: -100px;
+}
+#tarjetas-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+ 
+}
+
+.card {
+  margin: 10px;
+  border-radius: 10px; /* Espacio entre las tarjetas */
+}
+
+#h5email {
+  font-weight: bold;
+  color: var(--color-3);
+  font-style: italic;
+  white-space: nowrap; 
+  overflow: hidden; 
+
+ 
+}
+#resumen-container {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1.5rem; /* Tamaño de fuente más grande */
+}
+
+#resumen-container p {
+  font-style: italic;
+  color: var(--color-4);/* Correos electrónicos en cursiva */
+}
+
+#resumen-container p > span {
+  font-style: oblique;
+  color: var(--color-2);
+  font-weight: 700;
+}

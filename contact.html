@@ -43,12 +43,10 @@
 
 				<div class="collapse navbar-collapse" id="navbarsFurni">
 					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
-						<li class="nav-item active">
-							<a class="nav-link" href="index.html">Inicio</a>
-						</li>
+						<li class="nav-item active"><a class="nav-link" href="index.html">Inicio</a></li>
 						<li><a class="nav-link" href="services.html">Servicios</a></li>
-						<li><a class="nav-link" href="shop.html">Proyectos</a></li>
-						<li><a class="nav-link" href="blog.html">Youtube</a></li>
+						<li><a class="nav-link" href="project.html">Proyectos</a></li>
+						<li><a class="nav-link" href="blog.html">Solicitudes</a></li>
 						<li><a class="nav-link" href="about.html">SobreMi</a></li>
 						<li><a class="nav-link" href="contact.html">Contacto</a></li>
 					</ul>
@@ -161,13 +159,22 @@
                   <label class="text-black" for="email">Correo</label>
                   <input type="email" class="form-control" id="email">
                 </div>
+				<div class="form-group">
+					<label class="text-black" for="category">Categoria</label>
+					<select required class="form-control" id="category">
+						<option value="API">API</option>
+						<option value="TESTING">TESTING</option>
+						<option value="SEGURIDAD">SEGURIDAD</option>
+						<option value="OTRO">OTRO</option>
+					</select>
+				</div>
 
                 <div class="form-group mb-5">
                   <label class="text-black" for="message">¿Como puedo ayudarte?</label>
                   <textarea name="" class="form-control" id="message" cols="30" rows="5"></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-primary-hover-outline">Send Message</button>
+                <button type="submit" class="btn btn-primary-hover-outline" >Send Message</button>
               </form>
 
             </div>
@@ -296,6 +303,7 @@
 		<script src="js/custom.js"></script>
 		<script src="js/main.js"></script>
 		<script src="js/savemessage.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	</body>
 
 </html>
